@@ -1,3 +1,4 @@
+/* Keyframes con prefijos */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -8,7 +9,30 @@
     transform: translateY(0);
   }
 }
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
 
+/* Clase de animación optimizada */
 .animate-fade-in {
+  -webkit-animation: fadeIn 0.25s ease-out;
   animation: fadeIn 0.25s ease-out;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: opacity, transform;
+}
+
+/* Respeta preferencias de movimiento */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in {
+    -webkit-animation: none;
+    animation: none;
+  }
 }
