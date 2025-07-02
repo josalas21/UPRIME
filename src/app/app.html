@@ -1,3 +1,475 @@
-<main class="flex justify-center items-center h-screen bg-black">
-  <h1 class="text-4xl font-bold mb-4 text-white">WELCOME TO UPRIME</h1>
-</main>
+<div
+  class="relative bg-[url('/assets/pattern.svg')] bg-repeat h-full overflow-hidden"
+>
+  <div
+    class="absolute -top-[300px] -left-[300px] w-[1200px] h-[1200px] bg-[#0B2545]/60 rounded-full filter blur-[200px]"
+  ></div>
+
+  <div
+    class="absolute -bottom-[500px] -right-[400px] w-[1500px] h-[1500px] bg-[#0B2545]/50 rounded-full filter blur-[250px]"
+  ></div>
+
+  <div
+    class="absolute top-1/4 -right-[200px] w-[1800px] h-[1800px] bg-[#0B2545]/20 rounded-full filter blur-[300px]"
+  ></div>
+
+  <div
+    class="absolute -bottom-[800px] left-1/4 w-[2000px] h-[2000px] bg-[#0B2545]/40 rounded-full filter blur-[350px]"
+  ></div>
+
+  <div
+    class="absolute top-[600px] left-[200px] w-[2500px] h-[2500px] bg-[#0B2545]/30 rounded-full filter blur-[400px]"
+  ></div>
+
+  <div
+    class="absolute top-[600px] left-[200px] w-[250px] h-[250px] bg-[#0B2545]/20 rounded-full filter blur-[400px] z-0"
+  ></div>
+  <div
+    class="relative flex flex-col w-[95%] sm:w-[80%] md:w-[60%] mx-auto py-10 text-[#FFF9EC]"
+  >
+    <span
+      class="md:hidden sm:mb-10 text-3xl font-bold text-center flex mx-auto w-fit"
+      >UPRIME</span
+    >
+    <app-navbar></app-navbar>
+    <span
+      class="text-3xl sm:text-5xl md:text-7xl font-semibold text-center flex mt-10 sm:mt-20 md:mt-32 md:w-[70%] mx-auto"
+    >
+      Your Work Deserves a Beautiful Online Home</span
+    >
+    <span
+      class="opacity-70 md:w-[50%] text-sm md:text-base mx-auto text-center flex mt-10"
+    >
+      Custom portfolio websites for freelancers, architects & creatives—fast,
+      affordable, and built to impress.
+    </span>
+    <div class="flex justify-center mt-10">
+      <button
+        class="bg-[#EEF4ED] text-[#0B2545] px-6 py-3 rounded-full font-semibold hover:bg-[#0B2545] hover:text-[#FFF9EC] transition-colors duration-200"
+      >
+        Get Your Website Now
+      </button>
+    </div>
+    <span class="mt-20 text-4xl text-center flex mx-auto w-fit"
+      >Services we provide</span
+    >
+  </div>
+  <div
+    class="flex flex-wrap w-[80%] justify-center items-center mx-auto gap-6 mb-20"
+  >
+    <div
+      class="relative p-4 flex flex-col w-90 h-100 rounded-xl border-2 border-[#8DA9C4]/30"
+      style="
+        background: linear-gradient(
+          217deg,
+          rgba(19, 64, 116, 1) 0%,
+          rgba(0, 0, 0, 1) 100%
+        );
+      "
+    >
+      <span class="text-[#FFF9EC] text-2xl font-bold"
+        >Brand Identity & Logo Design</span
+      >
+      <span class="font-thin text-[#FFF9EC]/70 pt-2"
+        >We craft strong visual identities that capture the essence of your
+        brand.</span
+      >
+      <img
+        src="assets/asset-1.svg"
+        class="absolute w-[50%] top-2/3 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        alt="shape1"
+      />
+    </div>
+    <div
+      class="relative p-4 flex flex-col w-90 h-100 rounded-xl border-2 border-[#8DA9C4]/30 overflow-hidden"
+      style="
+        background: linear-gradient(
+          31deg,
+          rgba(19, 64, 116, 1) 0%,
+          rgba(0, 0, 0, 1) 100%
+        );
+      "
+    >
+      <span class="text-[#FFF9EC] text-2xl font-bold">Web UI/UX Design</span>
+      <span class="font-thin text-[#FFF9EC]/70 pt-2"
+        >We design clean, intuitive, and engaging interfaces with a user-first
+        approach.
+      </span>
+      <img
+        src="assets/asset-2.svg"
+        class="absolute w-[70%] top-3/4 left-1/4 -translate-x-1/2 -translate-y-1/2"
+        alt="shape2"
+      />
+      <img
+        src="assets/asset-2.svg"
+        class="absolute w-[50%] rotate-270 top-1/3 -right-20"
+        alt="shape3"
+      />
+    </div>
+    <div
+      class="p-4 flex flex-col w-90 h-100 rounded-xl border-2 border-[#8DA9C4]/30"
+      style="
+        background: linear-gradient(
+          83deg,
+          rgba(19, 64, 116, 1) 0%,
+          rgba(0, 0, 0, 1) 100%
+        );
+      "
+    >
+      <span class="text-[#FFF9EC] text-2xl font-bold"
+        >Video Editing & Logo Animation</span
+      >
+      <span class="font-thin text-[#FFF9EC]/70 pt-2"
+        >We bring your ideas to life with professional video editing and
+        animated logos.</span
+      >
+    </div>
+  </div>
+
+  <div class="w-[80%] mx-auto text-[#FFF9EC] mt-24">
+    <!-- Título -->
+    <h2 class="text-4xl font-semibold text-center mb-10">
+      Our Workflow in 4 Simple Steps
+    </h2>
+
+    <!-- Stepper Horizontal -->
+    <div
+      class="hidden sm:flex items-center justify-between max-w-5xl mx-auto text-white mb-16"
+    >
+      <!-- Step 1 -->
+      <div class="flex flex-col items-center relative">
+        <div
+          class="w-10 h-10 rounded-full bg-[#0B2545] flex items-center justify-center text-white font-bold"
+        >
+          ✓
+        </div>
+        <span class="mt-2 text-sm opacity-90">STEP 1</span>
+        <span class="text-sm">Consultation</span>
+        <span class="text-xs text-green-400 mt-1">Completed</span>
+      </div>
+
+      <div class="flex-1 h-1 bg-[#13315C] mx-2"></div>
+
+      <!-- Step 2 -->
+      <div class="flex flex-col items-center relative">
+        <div
+          class="w-10 h-10 rounded-full bg-[#0B2545] flex items-center justify-center text-white font-bold"
+        >
+          ✓
+        </div>
+        <span class="mt-2 text-sm opacity-90">STEP 2</span>
+        <span class="text-sm">Design & Development</span>
+        <span class="text-xs text-green-400 mt-1">Completed</span>
+      </div>
+
+      <div class="flex-1 h-1 bg-[#13315C] mx-2"></div>
+
+      <!-- Step 3 -->
+      <div class="flex flex-col items-center relative">
+        <div
+          class="w-10 h-10 rounded-full bg-[#0B2545] flex items-center justify-center font-bold"
+        >
+          <svg
+            class="w-5 h-5 animate-spin text-white"
+            style="animation-duration: 1700ms"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 15.5a3.5 3.5 0 100-7 3.5 3.5 0 000 7z
+              M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33
+              1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09a1.65 1.65 0 00-1-1.51
+              1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06
+              a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09
+              a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06
+              a1.65 1.65 0 001.82.33h.09a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09
+              a1.65 1.65 0 001 1.51h.09a1.65 1.65 0 001.82-.33l.06-.06
+              a2 2 0 012.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82v.09a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09
+              a1.65 1.65 0 00-1.51 1z"
+            />
+          </svg>
+        </div>
+        <span class="mt-2 text-sm opacity-90">STEP 3</span>
+        <span class="text-sm">Revisions & Approval</span>
+        <span class="text-xs text-amber-500 mt-1">In Progress</span>
+      </div>
+
+      <div class="flex-1 h-1 bg-gray-600 mx-2"></div>
+
+      <!-- Step 4 -->
+      <div class="flex flex-col items-center relative">
+        <div
+          class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white/50 font-bold"
+        >
+          ⬤
+        </div>
+        <span class="mt-2 text-sm opacity-50">STEP 4</span>
+        <span class="text-sm text-gray-400">Launch & Support</span>
+        <span class="text-xs text-gray-400 mt-1">Pending</span>
+      </div>
+    </div>
+
+    <!-- Stepper Vertical -->
+    <div
+      class="sm:hidden flex flex-col items-start max-w-5xl mx-auto text-white mb-16 relative pl-8 md:pl-12"
+    >
+      <!-- Step 1 -->
+      <div class="flex items-start relative z-10 mb-8">
+        <div
+          class="flex-shrink-0 w-10 h-10 rounded-full bg-[#0B2545] flex items-center justify-center text-white font-bold mr-4"
+        >
+          ✓
+        </div>
+        <div class="flex flex-col">
+          <span class="text-sm opacity-90">STEP 1</span>
+          <span class="text-sm font-medium">Consultation</span>
+          <span class="text-xs text-green-400 mt-1">Completed</span>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="flex items-start relative z-10 mb-8">
+        <div
+          class="flex-shrink-0 w-10 h-10 rounded-full bg-[#0B2545] flex items-center justify-center text-white font-bold mr-4"
+        >
+          ✓
+        </div>
+        <div class="flex flex-col">
+          <span class="text-sm opacity-90">STEP 2</span>
+          <span class="text-sm font-medium">Design & Development</span>
+          <span class="text-xs text-green-400 mt-1">Completed</span>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="flex items-start relative z-10 mb-8">
+        <div
+          class="flex-shrink-0 w-10 h-10 rounded-full bg-[#0B2545] flex items-center justify-center font-bold mr-4"
+        >
+          <svg
+            class="w-5 h-5 animate-spin text-white"
+            style="animation-duration: 1700ms"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 15.5a3.5 3.5 0 100-7 3.5 3.5 0 000 7z
+          M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33
+          1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09a1.65 1.65 0 00-1-1.51
+          1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06
+          a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09
+          a1.65 1.65 0 001.51-1 1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06
+          a1.65 1.65 0 001.82.33h.09a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09
+          a1.65 1.65 0 001 1.51h.09a1.65 1.65 0 001.82-.33l.06-.06
+          a2 2 0 012.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82v.09a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09
+          a1.65 1.65 0 00-1.51 1z"
+            />
+          </svg>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-sm opacity-90">STEP 3</span>
+          <span class="text-sm font-medium">Revisions & Approval</span>
+          <span class="text-xs text-amber-500 mt-1">In Progress</span>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="flex items-start relative z-10">
+        <div
+          class="flex-shrink-0 w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white/50 font-bold mr-4"
+        >
+          ⬤
+        </div>
+        <div class="flex flex-col">
+          <span class="text-sm opacity-50">STEP 4</span>
+          <span class="text-sm text-gray-400 font-medium"
+            >Launch & Support</span
+          >
+          <span class="text-xs text-gray-400 mt-1">Pending</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex gap-6 flex-wrap mx-auto w-fit mt-16 text-[#FFF9EC]">
+      <div class="flex flex-wrap gap-6 justify-center">
+        <!-- STEP 1 -->
+        <div
+          class="relative flex flex-col justify-between border border-[#8DA9C4]/30 rounded-xl p-6 shadow-lg h-60 w-80"
+          style="
+            background: linear-gradient(
+              270deg,
+              rgba(19, 64, 116, 1) 0%,
+              rgba(0, 0, 0, 1) 100%
+            );
+          "
+        >
+          <img
+            src="assets/asset-3.svg"
+            class="absolute w-10 right-6 top-4 opacity-60"
+            alt="shape3"
+          />
+          <img
+            src="assets/asset-3.svg"
+            class="absolute w-20 rotate-90 right-8 bottom-10 opacity-40"
+            alt="shape3"
+          />
+          <div class="flex items-center gap-3 mb-3">
+            <div class="text-2xl font-bold text-[#8DA9C4]">1</div>
+            <h3 class="text-xl font-semibold">Consultation</h3>
+          </div>
+          <ul class="text-sm text-[#FFF9EC]/70 space-y-2 pl-5 list-disc">
+            <li>Initial discovery call</li>
+            <li>Requirements analysis</li>
+            <li>Project scoping</li>
+            <li>Proposal presentation</li>
+          </ul>
+        </div>
+
+        <!-- STEP 2 -->
+        <div
+          class="relative flex flex-col justify-between border border-[#8DA9C4]/30 rounded-xl p-6 shadow-lg h-60 w-80"
+          style="
+            background: linear-gradient(
+              111deg,
+              rgba(19, 64, 116, 1) 0%,
+              rgba(0, 0, 0, 1) 100%
+            );
+          "
+        >
+          <img
+            src="assets/asset-3.svg"
+            class="absolute w-30 rotate-90 right-4 top-2 opacity-30"
+            alt="shape3"
+          />
+          <img
+            src="assets/asset-3.svg"
+            class="absolute w-6 right-8 bottom-8 opacity-80"
+            alt="shape3"
+          />
+          <div class="flex items-center gap-3 mb-3">
+            <div class="text-2xl font-bold text-[#8DA9C4]">2</div>
+            <h3 class="text-xl font-semibold">Design & Development</h3>
+          </div>
+          <ul class="text-sm text-[#FFF9EC]/70 space-y-2 pl-5 list-disc">
+            <li>Wireframing & prototyping</li>
+            <li>UI/UX design</li>
+            <li>Frontend development</li>
+            <li>Backend integration</li>
+          </ul>
+        </div>
+
+        <!-- STEP 3 -->
+        <div
+          class="relative flex flex-col justify-between border border-[#8DA9C4]/30 rounded-xl p-6 shadow-lg h-60 w-80"
+          style="
+            background: linear-gradient(
+              217deg,
+              rgba(19, 64, 116, 1) 0%,
+              rgba(0, 0, 0, 1) 100%
+            );
+          "
+        >
+          <img
+            src="assets/asset-3.svg"
+            class="absolute w-9 right-10 rotate-90 bottom-4 opacity-50"
+            alt="shape3"
+          />
+          <img
+            src="assets/asset-3.svg"
+            class="absolute w-50 left-2 top-2 opacity-10"
+            alt="shape3"
+          />
+          <div class="flex items-center gap-3 mb-3">
+            <div class="text-2xl font-bold text-[#8DA9C4]">3</div>
+            <h3 class="text-xl font-semibold">Revisions & Approval</h3>
+          </div>
+          <ul class="text-sm text-[#FFF9EC]/70 space-y-2 pl-5 list-disc">
+            <li>Client feedback rounds</li>
+            <li>Design adjustments</li>
+            <li>Functionality testing</li>
+            <li>Final approval</li>
+          </ul>
+        </div>
+
+        <!-- STEP 4 -->
+        <div
+          class="relative flex flex-col justify-between border border-[#8DA9C4]/30 rounded-xl p-6 shadow-lg h-60 w-80"
+          style="
+            background: linear-gradient(
+              58deg,
+              rgba(19, 64, 116, 1) 0%,
+              rgba(0, 0, 0, 1) 100%
+            );
+          "
+        >
+          <img
+            src="assets/asset-3.svg"
+            class="absolute w-20 right-6 bottom-8 opacity-25"
+            alt="shape3"
+          />
+          <img
+            src="assets/asset-3.svg"
+            class="absolute w-5 right-5 rotate-90 top-10 opacity-90"
+            alt="shape3"
+          />
+          <div class="flex items-center gap-3 mb-3">
+            <div class="text-2xl font-bold text-[#8DA9C4]">4</div>
+            <h3 class="text-xl font-semibold">Launch & Support</h3>
+          </div>
+          <ul class="text-sm text-[#FFF9EC]/70 space-y-2 pl-5 list-disc">
+            <li>Final deployment</li>
+            <li>Performance optimization</li>
+            <li>Training & documentation</li>
+            <li>Ongoing maintenance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="relative flex flex-col items-center justify-center h-160">
+    <span
+      class="relative mt-20 text-[#FFF9EC] text-4xl text-center flex mx-auto w-fit"
+      >Frequently Asked Questions</span
+    >
+    <app-faq></app-faq>
+  </div>
+  <div
+    class="relative bg-gradient-to-r from-[#0B2545] to-black rounded-xl p-8 md:p-10 overflow-hidden w-[90%] sm:w-[70%] md:w-[50%] mx-auto flex flex-col items-center justify-center text-center mt-20 mb-10"
+  >
+    <!-- Elementos decorativos -->
+    <div
+      class="absolute top-0 right-0 w-32 h-32 bg-[#13315C] rounded-full filter blur-[4rem]"
+    ></div>
+    <div
+      class="absolute bottom-0 left-0 w-40 h-40 bg-[#13315C] rounded-full filter blur-xl"
+    ></div>
+
+    <!-- Contenido principal -->
+
+    <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">
+      Curious how branding can<br />
+      <span class="text-blue-300">elevate your business?</span>
+    </h2>
+
+    <p class="text-gray-300 mb-6 max-w-lg">
+      Let's talk! Book a free consultation and discover how UPRIME<br />
+      can grow your brand.
+    </p>
+
+    <button
+      class="bg-[#EEF4ED] text-[#0B2545] px-6 py-3 rounded-full font-semibold hover:bg-[#0B2545] hover:text-[#FFF9EC] transition-colors duration-200"
+    >
+      Book A Call
+    </button>
+  </div>
+</div>
