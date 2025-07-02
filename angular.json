@@ -14,7 +14,7 @@
           "builder": "@angular/build:application",
           "options": {
             "outputPath": "docs",
-            "baseHref": "/uprime/",
+            "baseHref": "/UPRIME/",
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": ["src/assets"],
