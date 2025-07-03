@@ -66,10 +66,13 @@
             Your website works while you sleep, generating leads and sales 24
             hours a day.
           </p>
-          <app-demand
-            [animationData]="demand"
-            containerId="demand"
-          ></app-demand>
+          <app-lottie
+            [options]="{
+              animationData: demand,
+              loop: true,
+              autoplay: true
+            }"
+          ></app-lottie>
         </div>
 
         <!-- Beneficio 2 -->
@@ -82,7 +85,13 @@
             75% of users judge credibility based on web design. Stand out from
             competitors.
           </p>
-          <app-demand [animationData]="chart" containerId="chart"></app-demand>
+          <app-lottie
+            [options]="{
+              animationData: chart,
+              loop: true,
+              autoplay: true
+            }"
+          ></app-lottie>
         </div>
 
         <!-- Beneficio 3 -->
@@ -94,10 +103,13 @@
           <p class="text-[#FFF9EC]/80">
             Get found by customers searching for your services 24/7 on Google.
           </p>
-          <app-demand
-            [animationData]="search"
-            containerId="search"
-          ></app-demand>
+          <app-lottie
+            [options]="{
+              animationData: search,
+              loop: true,
+              autoplay: true
+            }"
+          ></app-lottie>
         </div>
       </div>
 

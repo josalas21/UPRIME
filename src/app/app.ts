@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { Navbar } from './components/navbar/navbar';
 import { Faq } from './components/faq/faq';
-import { Demand } from './components/demand/demand';
 import demand from '../assets/demand.json';
 import search from '../assets/search.json';
 import chart from '../assets/chart.json';
+import { Lottie } from './components/lottie/lottie';
 
 @Component({
   selector: 'app-root',
-  imports: [Navbar, Faq, Demand],
+  imports: [Navbar, Faq, Lottie],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
