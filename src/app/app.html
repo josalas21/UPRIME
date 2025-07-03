@@ -25,12 +25,25 @@
     class="hidden sm:block absolute top-[600px] left-[200px] w-[250px] h-[250px] bg-[#0B2545]/20 rounded-full filter blur-[400px] z-0"
   ></div>
   <div
-    class="relative flex flex-col w-[95%] sm:w-[80%] md:w-[60%] mx-auto py-10 text-[#FFF9EC]"
+    class="relative flex flex-col w-[95%] sm:w-[80%] md:w-[60%] mx-auto py-10 pt-20 sm:pt-10 text-[#FFF9EC]"
   >
-    <span
-      class="md:hidden sm:mb-10 text-5xl sm:text-3xl font-bold text-center flex mx-auto w-fit"
-      >UPRIME</span
-    >
+    <nav class="fixed md:hidden top-0 left-0 w-full z-300">
+      <div
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <div
+          class="font-bold bg-[#FFF9EC] text-[#13315C] px-3 py-1 rounded-full"
+        >
+          UPRIME
+        </div>
+        <button
+          class="bg-[#0B2545] text-white font-medium py-2 px-4 rounded-full transition-colors"
+        >
+          Start Networking
+        </button>
+      </div>
+    </nav>
+
     <app-navbar></app-navbar>
     <span
       class="text-3xl sm:text-5xl md:text-7xl font-semibold text-center flex mt-10 sm:mt-20 md:mt-32 md:w-[70%] mx-auto"
@@ -45,13 +58,23 @@
     </span>
     <div class="flex justify-center mt-10 mb-12 md:mb-20">
       <button
-        class="bg-[#EEF4ED] text-[#0B2545] px-6 py-3 rounded-full font-semibold hover:bg-[#0B2545] hover:text-[#FFF9EC] transition-colors duration-200"
+        class="hidden sm:block bg-[#EEF4ED] text-[#0B2545] px-6 py-3 rounded-full font-semibold hover:bg-[#0B2545] hover:text-[#FFF9EC] transition-colors duration-200"
       >
         Get Your Website Now
       </button>
+      <button
+        class="sm:hidden bg-[#EEF4ED] text-[#0B2545] py-2 px-4 rounded-full font-semibold hover:bg-[#0B2545] hover:text-[#FFF9EC] transition-colors duration-200"
+      >
+        Contact Us
+      </button>
     </div>
-    <div class="w-[80%] mx-auto mb-20 text-[#FFF9EC]">
-      <h2 class="text-3xl md:text-4xl font-semibold text-center mb-12">
+    <img
+      src="assets/responsive2.svg"
+      alt="responsive"
+      class="filter hue-rotate-180 sepia-25 saturate-150 brightness-90 contrast-110 mb-24"
+    />
+    <div class="w-[90%] mx-auto mb-20 text-[#FFF9EC]">
+      <h2 class="text-2xl md:text-4xl font-semibold text-center mb-12">
         Why Your Business Needs a Professional Website
       </h2>
 
@@ -60,30 +83,10 @@
         <div
           class="bg-[#0B2545]/50 flex flex-col items-center p-6 rounded-xl border border-[#8DA9C4]/30"
         >
-          <div class="text-6xl font-bold text-[#8DA9C4] mb-10">24/7</div>
           <h3 class="text-xl font-bold mb-2">Always Open Storefront</h3>
           <p class="text-[#FFF9EC]/80 mb-6">
             Your website works while you sleep, generating leads and sales 24
             hours a day.
-          </p>
-          <app-lottie
-            [options]="{
-              animationData: demand,
-              loop: true,
-              autoplay: true
-            }"
-          ></app-lottie>
-        </div>
-
-        <!-- Beneficio 2 -->
-        <div
-          class="bg-[#0B2545]/50 flex flex-col items-center p-6 rounded-xl border border-[#8DA9C4]/30"
-        >
-          <div class="text-6xl font-bold text-[#8DA9C4] mb-10">10x</div>
-          <h3 class="text-xl font-bold mb-2">Credibility Boost</h3>
-          <p class="text-[#FFF9EC]/80 mb-6">
-            75% of users judge credibility based on web design. Stand out from
-            competitors.
           </p>
           <app-lottie
             [options]="{
@@ -94,11 +97,28 @@
           ></app-lottie>
         </div>
 
+        <!-- Beneficio 2 -->
+        <div
+          class="bg-[#0B2545]/50 flex flex-col items-center p-6 rounded-xl border border-[#8DA9C4]/30"
+        >
+          <h3 class="text-xl font-bold mb-2">Credibility Boost</h3>
+          <p class="text-[#FFF9EC]/80 mb-6">
+            75% of users judge credibility based on web design. Stand out from
+            competitors.
+          </p>
+          <app-lottie
+            [options]="{
+              animationData: demand,
+              loop: true,
+              autoplay: true
+            }"
+          ></app-lottie>
+        </div>
+
         <!-- Beneficio 3 -->
         <div
           class="bg-[#0B2545]/50 flex flex-col items-center p-6 rounded-xl border border-[#8DA9C4]/30"
         >
-          <div class="text-6xl font-bold text-[#8DA9C4] mb-10">✓</div>
           <h3 class="text-xl font-bold mb-2">SEO Advantage</h3>
           <p class="text-[#FFF9EC]/80">
             Get found by customers searching for your services 24/7 on Google.
@@ -128,7 +148,7 @@
     >
   </div>
   <div
-    class="flex flex-wrap w-[80%] justify-center items-center mx-auto gap-6 mb-20"
+    class="flex flex-wrap w-[90%] justify-center items-center mx-auto gap-6 mb-20"
   >
     <div
       class="relative p-4 flex flex-col w-90 h-100 rounded-xl border-2 border-[#8DA9C4]/30"
@@ -373,7 +393,7 @@
       </div>
     </div>
 
-    <div class="flex gap-6 flex-wrap mx-auto w-fit mt-16 text-[#FFF9EC]">
+    <div class="flex gap-6 flex-wrap mx-auto w-[fit] mt-16 text-[#FFF9EC]">
       <div class="flex flex-wrap gap-6 justify-center">
         <!-- STEP 1 -->
         <div
