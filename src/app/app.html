@@ -43,12 +43,73 @@
       Custom portfolio websites for freelancers, architects & creatives—fast,
       affordable, and built to impress.
     </span>
-    <div class="flex justify-center mt-10">
+    <div class="flex justify-center mt-10 mb-12 md:mb-20">
       <button
         class="bg-[#EEF4ED] text-[#0B2545] px-6 py-3 rounded-full font-semibold hover:bg-[#0B2545] hover:text-[#FFF9EC] transition-colors duration-200"
       >
         Get Your Website Now
       </button>
+    </div>
+    <div class="w-[80%] mx-auto mb-20 text-[#FFF9EC]">
+      <h2 class="text-3xl md:text-4xl font-semibold text-center mb-12">
+        Why Your Business Needs a Professional Website
+      </h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Beneficio 1 -->
+        <div
+          class="bg-[#0B2545]/50 flex flex-col items-center p-6 rounded-xl border border-[#8DA9C4]/30"
+        >
+          <div class="text-6xl font-bold text-[#8DA9C4] mb-10">24/7</div>
+          <h3 class="text-xl font-bold mb-2">Always Open Storefront</h3>
+          <p class="text-[#FFF9EC]/80 mb-6">
+            Your website works while you sleep, generating leads and sales 24
+            hours a day.
+          </p>
+          <app-demand
+            [animationData]="demand"
+            containerId="demand"
+          ></app-demand>
+        </div>
+
+        <!-- Beneficio 2 -->
+        <div
+          class="bg-[#0B2545]/50 flex flex-col items-center p-6 rounded-xl border border-[#8DA9C4]/30"
+        >
+          <div class="text-6xl font-bold text-[#8DA9C4] mb-10">10x</div>
+          <h3 class="text-xl font-bold mb-2">Credibility Boost</h3>
+          <p class="text-[#FFF9EC]/80 mb-6">
+            75% of users judge credibility based on web design. Stand out from
+            competitors.
+          </p>
+          <app-demand [animationData]="chart" containerId="chart"></app-demand>
+        </div>
+
+        <!-- Beneficio 3 -->
+        <div
+          class="bg-[#0B2545]/50 flex flex-col items-center p-6 rounded-xl border border-[#8DA9C4]/30"
+        >
+          <div class="text-6xl font-bold text-[#8DA9C4] mb-10">✓</div>
+          <h3 class="text-xl font-bold mb-2">SEO Advantage</h3>
+          <p class="text-[#FFF9EC]/80">
+            Get found by customers searching for your services 24/7 on Google.
+          </p>
+          <app-demand
+            [animationData]="search"
+            containerId="search"
+          ></app-demand>
+        </div>
+      </div>
+
+      <!-- Estadística destacada -->
+      <div class="mt-16 text-center border-t border-[#8DA9C4]/30 pt-12">
+        <p class="text-2xl md:text-3xl font-light italic">
+          "Businesses with professional websites grow
+          <span class="font-bold text-[#8DA9C4]">3x faster</span>
+          than those without"
+        </p>
+        <p class="mt-4 text-sm text-[#FFF9EC]/60">- Forbes Insights</p>
+      </div>
     </div>
     <span class="mt-20 text-3xl sm:text-4xl text-center flex mx-auto w-fit"
       >Services we provide</span
@@ -444,7 +505,7 @@
     <app-faq></app-faq>
   </div>
   <div
-    class="relative bg-gradient-to-r from-[#0B2545] to-black rounded-xl p-8 md:p-10 overflow-hidden w-[90%] sm:w-[70%] md:w-[50%] mx-auto flex flex-col items-center justify-center text-center mt-20 mb-10"
+    class="relative border-[#8DA9C4]/40 border bg-gradient-to-r from-[#0B2545] to-black rounded-xl p-8 md:p-10 overflow-hidden w-[90%] sm:w-[70%] md:w-[50%] mx-auto flex flex-col items-center justify-center text-center mt-20 mb-10"
   >
     <!-- Elementos decorativos -->
     <div
