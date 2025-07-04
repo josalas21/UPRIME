@@ -2,6 +2,8 @@
   <div
     *ngFor="let faq of faqs; index as i"
     class="mb-4 border border-[#8DA9C4]/40 rounded-lg overflow-hidden transition-all duration-300"
+    data-aos="fade-right"
+    data-aos-delay="{ i * 100 }"
     style="
       background: linear-gradient(
         270deg,
